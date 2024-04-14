@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .inputFormNumber {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .inputFormName {
+    margin-bottom: 10px;
+    width: 250px;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  .btnForm {
+    padding: 5px;
+  }
+  
+  .containerItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
