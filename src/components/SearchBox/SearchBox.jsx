@@ -1,15 +1,14 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
 import css from "./SearchBox.module.css";
 
-export default function SearchBox () {
-    return (
-        <Formik>
-            <Form className={css.container}>
-                <label className={css.label}>
-                    Find contact by name
-                </label>
-                <Field className={css.inputForm}/>
-            </Form>
-        </Formik>
-    )
+export default function SearchBox({ value, onSearch }) {
+  return (
+    <div className={css.containerSearcBox}>
+      <p>Find contacts by name</p>
+      <input className={css.input}
+        value={value}
+        onChange={(evt) => onSearch(evt.target.value)}
+        type="text"
+      />
+    </div>
+  );
 }
